@@ -72,21 +72,33 @@
 
                 <h3>email</h3>
                 <form action="action_fittizio.html" target="_blank" method="post">
-                    <label for="email">Enter your email:</label>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="surname">Cognome:</label>
+                    <input type="text" id="surname" name="surname" required>
+                    <br>
+                    <label for="email">Inserisci la tua email:</label>
                     <input type="email" id="email" name="email" required>
-                    <input type="submit">
-                    <p>What is your gender?</p>
-                    <input type="radio" name="gender" value="male"> Male
-                    <input type="radio" name="gender" value="female"> Female
-                    <div >
-                        <input id="checkbox" type="checkbox" required/>
-                        <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
-                      </div>
-                      <div >
-                        <input id="checkbox" type="checkbox" required/>
-                        <label for="checkbox"> I agree to these <a href="#">privacy</a>.</label>
-                      </div>
-                      <p><input type="submit" value="Submit"></p>
+                    <br>
+                    <p>Qual è il tuo genere?</p>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Maschio</label>
+                    <br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Femmina</label>
+                    <br>
+                    <br>
+                    <div>
+                        <input id="terms" type="checkbox" required>
+                        <label for="terms">Accetto i <a href="#">Termini e Condizioni</a>.</label>
+                    </div>
+                    <div>
+                        <input id="privacy" type="checkbox" required>
+                        <label for="privacy">Accetto la <a href="#">Privacy Policy</a>.</label>
+                    </div>
+                    <br>
+                    <input type="submit" value="Invia">
                 </form>
         </div>
     </section>   
